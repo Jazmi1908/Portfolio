@@ -7,26 +7,23 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Barlow:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  /* TEMA BARU: PREMIUM TECH DARK / GLOW (TIADA LAGI KELABU BOSAN) */
-  --bg: #0a0f1d; /* Biru gelap premium (Midnight Blue) */
-  --bg-gradient: radial-gradient(at 0% 0%, rgba(20, 184, 166, 0.15) 0px, transparent 50%),   /* Teal Glow */
-                  radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.2) 0px, transparent 50%), /* Indigo Glow */
-                  radial-gradient(at 50% 50%, rgba(139, 92, 246, 0.1) 0px, transparent 60%),/* Purple Center */
+  --bg: #0a0f1d; 
+  --bg-gradient: radial-gradient(at 0% 0%, rgba(20, 184, 166, 0.15) 0px, transparent 50%),  
+                  radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.2) 0px, transparent 50%), 
+                  radial-gradient(at 50% 50%, rgba(139, 92, 246, 0.1) 0px, transparent 60%),
                   radial-gradient(at 100% 100%, rgba(20, 184, 166, 0.1) 0px, transparent 50%);
   
-  --text: #f1f5f9;        /* Putih cerah/bersih */
-  --muted: #94a3b8;       /* Biru kelasi pudar untuk teks sekunder */
-  --border: rgba(255, 255, 255, 0.08); /* Garis sempadan bercahaya nipis */
+  --text: #f1f5f9;        
+  --muted: #94a3b8;       
+  --border: rgba(255, 255, 255, 0.08); 
   
-  /* Warna Aksyen Yang Hidup (Vibrant Tech Colors) */
-  --accent: #14b8a6;       /* Neon Teal (Warna utama untuk QA/Success) */
+  --accent: #14b8a6;     
   --accent-light: rgba(20, 184, 166, 0.1);
-  --accent2: #6366f1;      /* Electric Indigo */
+  --accent2: #6366f1;  
   --accent2-light: rgba(99, 102, 241, 0.1);
-  --accent3: #f59e0b;      /* Cyber Amber (Untuk amaran/bug tracking) */
+  --accent3: #f59e0b;     
   --accent3-light: rgba(245, 158, 11, 0.1);
   
-  /* Kad Glassmorphic Gelap */
   --card: rgba(15, 23, 42, 0.65); 
   --serif: 'Barlow', sans-serif;
   --sans: 'DM Sans', sans-serif;
@@ -51,7 +48,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ---- NAV ---- */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -109,7 +105,6 @@ nav {
   animation: blink 2s infinite;
 }
 
-/* ---- HERO ---- */
 .hero {
   min-height: 100vh;
   display: grid;
@@ -205,7 +200,6 @@ nav {
 }
 .btn-outline:hover { border-color: var(--accent); transform: translateY(-1px); background: rgba(255,255,255,0.05); }
 
-/* hero right — stat cards */
 .hero-right {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -263,7 +257,6 @@ nav {
   border: 1px solid rgba(99, 102, 241, 0.3);
 }
 
-/* ---- DIVIDER ---- */
 .divider {
   max-width: 1100px;
   margin: 0 auto;
@@ -274,7 +267,6 @@ nav {
   border-top: 1px solid var(--border);
 }
 
-/* ---- SECTION ---- */
 .section {
   max-width: 1100px;
   margin: 0 auto;
@@ -301,7 +293,6 @@ nav {
 }
 .section-title em { font-style: normal; color: var(--accent); font-weight: 300; }
 
-/* ---- SKILLS ---- */
 .skills-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -383,7 +374,6 @@ nav {
 .chip.green { background: var(--accent2-light); border-color: rgba(99, 102, 241, 0.3); color: #e0e7ff; }
 .chip.amber { background: var(--accent3-light); border-color: rgba(245, 158, 11, 0.3); color: #fef3c7; }
 
-/* ---- PROJECTS ---- */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -512,7 +502,6 @@ nav {
   opacity: 1;
 }
 
-/* Video Lightbox Style */
 .video-lightbox {
   display: none;
   position: fixed;
@@ -556,7 +545,6 @@ nav {
 }
 .vlb-close:hover { background: rgba(255,255,255,0.2); }
 
-/* Lightbox */
 .lightbox {
   display: none;
   position: fixed;
@@ -652,7 +640,6 @@ nav {
   color: var(--muted);
 }
 
-/* ---- EXPERIENCE ---- */
 .exp-timeline { position: relative; display: grid; gap: 0; }
 .exp-timeline::before {
   content: '';
@@ -742,7 +729,6 @@ nav {
   color: var(--accent);
 }
 
-/* ---- CONTACT ---- */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -807,7 +793,6 @@ nav {
   color: var(--muted);
 }
 
-/* ---- FOOTER ---- */
 footer {
   border-top: 1px solid var(--border);
   padding: 28px 60px;
@@ -823,7 +808,6 @@ footer p {
   color: var(--muted);
 }
 
-/* ---- ANIMATIONS ---- */
 @keyframes slideIn {
   from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: translateY(0); }
@@ -844,7 +828,6 @@ footer p {
 }
 .reveal.visible { opacity: 1; transform: none; }
 
-/* ---- RESPONSIVE ---- */
 @media (max-width: 900px) {
   nav { padding: 0 24px; }
   .nav-links { display: none; }
@@ -855,6 +838,38 @@ footer p {
   .projects-grid { grid-template-columns: 1fr; }
   .contact-layout { grid-template-columns: 1fr; }
   footer { padding: 24px; flex-direction: column; gap: 8px; }
+
+  .exp-timeline::before {
+    display: none; 
+  }
+  
+  .exp-item {
+    grid-template-columns: 1fr; 
+    gap: 0;
+    padding-bottom: 30px;
+    justify-content: center;
+  }
+
+  .exp-dot {
+    display: none; 
+  }
+
+  .exp-content {
+    width: 100%;       
+    max-width: 100%;   
+    margin: 0 auto; 
+    padding: 20px;  
+  }
+
+  .exp-header {
+    flex-direction: column; 
+    gap: 4px;
+  }
+  
+  .exp-period {
+    padding-top: 0;
+    margin-bottom: 6px;
+  }
 }
 </style>
 </head>
@@ -1213,7 +1228,6 @@ footer p {
   </div>
 </div>
 
-<!-- Lightbox Khas Untuk Video -->
 <div class="video-lightbox" id="video-lightbox">
   <div class="video-lightbox-inner">
     <button class="vlb-close" id="vlb-close" title="Close">✕</button>
@@ -1225,7 +1239,7 @@ footer p {
 </div>
 
 <script>
-// Scroll reveal
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) e.target.classList.add('visible');
@@ -1233,7 +1247,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Skill bar animation
+
 const barObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -1245,7 +1259,7 @@ const barObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 document.querySelectorAll('.skills-layout').forEach(el => barObserver.observe(el));
 
-// LOGIK LIGHTBOX GAMBAR & VIDEO
+
 const lightbox = document.getElementById('lightbox');
 const lbImg = document.getElementById('lightbox-img');
 const lbZoomLevel = document.getElementById('lb-zoom-level');
